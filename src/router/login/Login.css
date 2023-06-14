@@ -1,0 +1,80 @@
+.login {
+    width: 30% ;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  
+  .subtitle {
+    font-weight: 100;
+    padding-top: 5px;
+  }
+  
+  .input {
+    width: 100%;
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .button {
+    width: 100%;
+    background-color: var(--bg-py);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer__login {
+    text-align: center;
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+  .footer__login p{
+    margin-top: 20px;
+  }
+  .close-icon{
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  @media (max-width: 1086px) {
+    .login{
+      width: 60%;
+    }
+  }
+  @media (max-width: 990px) {
+    .login{
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .login {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .login {
+      width: 100%;
+    }
+  }

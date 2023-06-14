@@ -1,0 +1,30 @@
+
+.slider__container .mySwiper{
+    border-radius: 16px;
+    height: 450px;
+}
+.slider__container .mySwiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .swiper-button-prev{
+    background: #9D8AD8;
+    border-radius: 50%;
+    padding: 30px;
+}
+.swiper-button-next{
+    background: #9D8AD8;
+    border-radius: 50%;
+    padding: 30px;
+} */
+@media screen and (max-width:990px){
+    .slider__container .mySwiper{
+        height: 350px;
+    }
+}
+@media screen and (max-width:600px){
+    .slider__container .mySwiper{
+        height: 220px;
+    }
+}

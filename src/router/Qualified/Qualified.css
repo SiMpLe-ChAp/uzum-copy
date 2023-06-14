@@ -1,0 +1,29 @@
+.empty{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty__img {
+  width: 128px;
+  height: 128px;
+  margin: 130px;
+}
+.add__to__account{
+    background-color: var(--bg-py);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+h1{
+    font-size: 20px;
+    margin-top: -105px;
+    margin-bottom: 10px;
+}
+h2{
+    font-weight: 100;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
