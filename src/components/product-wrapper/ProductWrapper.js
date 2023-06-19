@@ -9,6 +9,7 @@ import {
     } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToHeart,removeFromHeart} from '../../context/heart'
+import { addToCart } from '../../context/cart'
 
 function ProductWrapper({data}) {
   const dispatch =useDispatch() 
@@ -17,6 +18,7 @@ function ProductWrapper({data}) {
    <div className="products">
       {data?.map(item => (
         <div key={item.id} className='card'>
+            
           <Link to={`/single-product/${item.id}`} className='card__image' state={{ item }}>
             <img src={item.url} alt='' />
           </Link>
@@ -41,7 +43,7 @@ function ProductWrapper({data}) {
                 <del>{Math.round(item.price * 1.5)} so'm</del>
                 <p>{item.price} so'm</p>
               </div>
-              <button className='price__cart'>
+              <button className='price__cart' onClick={()=> dispatch(addToCart(item))}>
                 <AiOutlineShoppingCart />
               </button>
             </div>

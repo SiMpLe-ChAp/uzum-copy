@@ -1,15 +1,18 @@
-import React from 'react'
+import React , {useState} from 'react'
 import {AiOutlineSearch , AiOutlineUser , AiOutlineHeart , AiOutlineShoppingCart , AiOutlineMenu , AiOutlineHome} from 'react-icons/ai'
 import navbar__logo from '../../assets/logo__navbar.svg'
 import { Link } from "react-router-dom";
+import Sidebar from '../sidebar/Sidebar';
 
 function NavbarMain() {
+  const [show ,setShow] = useState(false)
   return (
+    <>
     <div className='container navbar__main'>
       <Link to={"/"}>
         <img src={navbar__logo} alt="" className="nav__logo" />
       </Link>
-      <button className='nav__btn'>
+      <button className='nav__btn' onClick={()=>setShow(true)}>
         <AiOutlineMenu/>
         <span>Katalog</span></button>
       <div className="nav__search">
@@ -38,6 +41,9 @@ function NavbarMain() {
    </Link>
       </ul>
     </div>
+    <Sidebar show={show} setShow={setShow}/>
+    </>
+
   )
 }
 
